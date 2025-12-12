@@ -1,0 +1,10 @@
+create user - mediumpurple
+/users/create
+update user - greenyellow
+/users/{id}/update
+find user by id - green
+/users/{id}/read
+find user by last name - green
+/users/{lastName}/read_by_id
+delete user by id - red
+/users/{id}/delete
