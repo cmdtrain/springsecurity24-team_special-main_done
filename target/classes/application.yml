@@ -1,0 +1,24 @@
+server.port: 8080
+
+spring:
+  profiles.default: h2
+#  jpa.properties.hibernate.hbm2ddl.import_files_sql_extractor: org.hibernate.tool.schema.internal.script.MultiLineSqlScriptExtractor
+  h2.console.enabled: false
+  sql.init.mode: always
+
+spring.jpa.defer-datasource-initialization: true
+spring.jpa:
+  show-sql: true
+  generate-ddl: true
+  hibernate.ddl-auto: create
+
+#spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation: true
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.hibernate: INFO
+    com.softserve.itacademy: INFO
+
+logging.file.name: logs/todolist.log
